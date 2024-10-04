@@ -88,15 +88,17 @@ public class GameBoard {
         return board[0].length;
     }
 
-    public String getSign(CellPosition cellPosition) {
+
+    public CellSnapshot getSnapshot(CellPosition cellPosition) {
         Cell cell = findCell(cellPosition);
-        return cell.getSign();
+        return cell.getSnapshot();
     }
 
     public boolean isLandMineCellAt(CellPosition cellPosition) {
         Cell cell = findCell(cellPosition);
         return cell.isLandMine();
     }
+
     public boolean isAllCellChecked() {
         Cells cells = Cells.from(board);
         return cells.isAllChecked();
