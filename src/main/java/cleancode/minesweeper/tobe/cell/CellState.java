@@ -4,7 +4,7 @@ public class CellState {
     private boolean isFlagged;
     private boolean isOpened;
 
-    public CellState(boolean isFlagged, boolean isOpened) {
+    private CellState(boolean isFlagged, boolean isOpened) {
         this.isFlagged = isFlagged;
         this.isOpened = isOpened;
     }
